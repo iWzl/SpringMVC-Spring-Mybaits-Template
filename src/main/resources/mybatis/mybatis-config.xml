@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 使用驼峰命名映射 -->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--<setting name="logImpl" value="LOG4J"/>-->
+    </settings>
+    <!--Mybatis二级缓存-->
+    <!--<settings>-->
+    <!--<setting name="cacheEnabled" value="true"/>-->
+    <!--</settings>-->
+
+    <!--pageHelper 分页插件-->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <property name="reasonable" value="true"/>
+        </plugin>
+    </plugins>
+</configuration>

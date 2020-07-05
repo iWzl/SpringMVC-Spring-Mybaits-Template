@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="aes" class="com.upuphub.template.util.encrypt.AESEncryptUtil">
+        <!--秘钥，不可轻易更换，更换需要将jdbc、redis密码使用新秘钥重新加密-->
+        <constructor-arg name="key" value="isWangzl"/>
+    </bean>
+</beans>
